@@ -7,7 +7,7 @@
     }
 
     .header {
-        background-color: #272727;
+        background-color: #2c3e50;
         padding: 1rem 0;
         width: 100%;
         top: 0;
@@ -26,11 +26,10 @@
     }
 
     .logo {
-        color: #ff0000;
+        color: #fff;
         font-size: 1.5rem;
         font-weight: bold;
         text-decoration: none;
-        border-radius: 20px;
     }
 
     .menu {
@@ -40,7 +39,7 @@
     }
 
     .menu-item a {
-        color: #ff0000;
+        color: #fff;
         text-decoration: none;
         font-size: 1rem;
         transition: color 0.3s ease;
@@ -62,7 +61,7 @@
         border: none;
         outline: none;
         padding: 0.2rem;
-        width: 300px;
+        width: 200px;
     }
 
     .search-button {
@@ -71,21 +70,18 @@
         cursor: pointer;
         color: #2c3e50;
     }
-    .si{
-        background-color: blue;
-        color: white;
-    }
 </style>
 
 <header class="header">
-    
+    <%
+        int x = 100;
+    %>
     <div class="container">
         <nav class="nav">
-            <img href="#" class="logo" src="image/2.webp" height="150px" width="200px">
+            <a href="#" class="logo">SHOP ONLINE</a>
             <ul class="menu">
                 <li class="menu-item"><a href="#">Trang chủ</a></li>
                 <li class="menu-item"><a href="#">Sản phẩm</a></li>
-                <li class="menu-item"><a href="#">Giá xe</a></li>
                 <li class="menu-item"><a href="#">Giỏ hàng</a></li>
                 <li class="menu-item"><a href="#">Liên hệ</a></li>
             </ul>
@@ -93,13 +89,6 @@
                 <input type="text" class="search-input" placeholder="Tìm kiếm...">
                 <button class="search-button">🔍</button>
             </div>
-            
-            <a href="register.jsp" target="_parent">
-            <button class="su">Sign up</button>
-            </a>
-            <a href="login.jsp" target="_parent">
-            <button class="si">Sign in</button>
-            </a>
         </nav>
     </div>
 </header>
