@@ -12,10 +12,7 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author tungi
- */
+
 public class DBUtils {
     private static final String DB_NAME = "prj301_1820_slot12";
     private static final String DB_USERNAME = "sa";
