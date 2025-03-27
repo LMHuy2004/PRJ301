@@ -153,7 +153,7 @@
             <%                if (session.getAttribute("user") != null) {
                     UserDTO user = (UserDTO) session.getAttribute("user");
             %>
-
+            <h1> Welcome <%=user.getFullName()%> </h1>
             <%
                 String searchTerm = request.getAttribute("searchTerm") + "";
                 searchTerm = searchTerm.equals("null") ? "" : searchTerm;
@@ -162,7 +162,7 @@
                 <form action="MainController">
                     <input type="hidden" name="action" value="search"/>
                     <label for="searchInput">Search Books:</label>
-                    <input type="text" id="searchInput" name="searchTerm" value="<%=searchTerm%>" class="search-input" placeholder="Enter book title, author or ID..."/>
+                    <input type="text" id="searchInput" name="searchTerm" value="<%=searchTerm%>" class="search-input" />
                     <input type="submit" value="Search" class="search-btn"/>
                 </form>
             </div>

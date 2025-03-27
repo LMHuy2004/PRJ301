@@ -1,8 +1,3 @@
-<%-- 
-    Document   : bookForm
-    Created on : Feb 27, 2025, 8:16:21 AM
-    Author     : tungi
---%>
 <%@page import="dto.BookDTO"%>
 <%@page import="java.awt.print.Book"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

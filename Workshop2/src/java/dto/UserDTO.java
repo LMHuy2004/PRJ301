@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dto;
 
 /**
@@ -10,20 +5,19 @@ package dto;
  * @author l26m1
  */
 public class UserDTO {
-    
     private String username;
-    private String name;
+    private String Name;
     private String password;
-    private String role;
+    private String Role;
 
     public UserDTO() {
     }
 
-    public UserDTO(String username, String name, String password, String role) {
+    public UserDTO(String username, String Name, String password, String Role) {
         this.username = username;
-        this.name = name;
+        this.Name = Name;
         this.password = password;
-        this.role = role;
+        this.Role = Role;
     }
 
     public String getUsername() {
@@ -35,11 +29,11 @@ public class UserDTO {
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
     public String getPassword() {
@@ -51,15 +45,10 @@ public class UserDTO {
     }
 
     public String getRole() {
-        return role;
+        return Role;
     }
 
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    @Override
-    public String toString() {
-        return "UserDTO{" + "username=" + username + ", name=" + name + ", password=" + password + ", role=" + role + '}';
-    }
+    public void setRole(String Role) {
+        this.Role = Role;
+    }    
 }

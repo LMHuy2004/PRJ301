@@ -1,9 +1,3 @@
-<%-- 
-    Document   : search
-    Created on : Feb 13, 2025, 11:27:20 AM
-    Author     : tungi
---%>
-
 <%@page import="dto.BookDTO"%>
 <%@page import="java.awt.print.Book"%>
 <%@page import="java.util.List"%>
@@ -80,7 +74,7 @@
             </form>
 
             <br/>
-
+<!--------------------------------------------------------------->
             <%
                 String searchTerm = request.getAttribute("searchTerm") + "";
                 searchTerm = searchTerm.equals("null") ? "" : searchTerm;
@@ -90,7 +84,7 @@
                 Search Books: <input type="text" name="searchTerm" value="<%=searchTerm%>"/>
                 <input type="submit" value="Search"/>
             </form>
-
+<!--------------------------------------------------------------->
             <a href="bookForm.jsp">
                 Add
             </a>

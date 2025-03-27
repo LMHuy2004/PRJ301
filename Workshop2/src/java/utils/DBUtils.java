@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package utils;
 
 import java.sql.Connection;
@@ -12,9 +7,8 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 public class DBUtils {
-    private static final String DB_NAME = "prj301_1820_slot8";
+    private static final String DB_NAME = "Workshop2";
     private static final String DB_USERNAME = "sa";
     private static final String DB_PASSWORD= "12345";
     
